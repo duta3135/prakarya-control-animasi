@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(33, 34, 42);
+  font-family: sans-serif;
+}
+h1 {
+  color: #fff;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
+}
+.pause-button {
+  background-color: rgb(95, 146, 255);
+}
+.play-button {
+  background-color: rgb(95, 255, 148);
+}
+.square {
+  background: linear-gradient(
+    300deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  animation: left-to-right 1s infinite ease-in;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+@keyframes left-to-right {
+  100% {
+    transform: translateX(400px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
